@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+/* Global settings */
+
+:root {
+  --mainRed: rgb(214, 90, 90);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  font-size: 10px;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--mainRed);
+  color: whitesmoke;
+}
+
+/* Container */
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Left section */
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+span {
+  font-size: 5.5rem;
+  display: block;
+}
+
+/* Right section */
+
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 4rem 3rem;
+  background-color: whitesmoke;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 1.5rem;
+  color: black;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  padding: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  background-color: rgb(235, 235, 235);
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid var(--mainRed);
+}
+
+textarea {
+  resize: none;
+  height: 10rem;
+}
+
+button {
+  transition: background-color 0.2s ease-in-out;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+button:hover,
+button:focus {
+  background-color: rgb(174, 174, 174);
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1450px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h1 span {
+    font-size: 4.75rem;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .left-section {
+    flex-direction: column;
+  }
+
+  img {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h1 span {
+    font-size: 4.2rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  h1 {
+    font-size: 3.1rem;
+  }
+
+  h1 span {
+    font-size: 3.7rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .right-section {
+    margin-bottom: 3rem;
+  }
+
+  img {
+    margin: 3rem 0;
+    max-width: 450px;
+    max-height: 450px;
+  }
+
+  h1 {
+    margin-bottom: 3rem;
+    font-size: 5rem;
+  }
+
+  h1 span {
+    font-size: 6rem;
+  }
+
+  input,
+  textarea {
+    min-width: 25rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h1 span {
+    font-size: 4.75rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1 span {
+    font-size: 3.6rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  input,
+  textarea {
+    min-width: 17.5rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  img {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h1 span {
+    font-size: 3rem;
+  }
+
+  input,
+  textarea {
+    min-width: 15rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  input,
+  textarea {
+    min-width: 13rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h1 span {
+    font-size: 2.4rem;
+  }
+
+  .right-section {
+    padding: 2rem 1.57rem;
+  }
+}
