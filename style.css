@@ -108,6 +108,21 @@ button:focus {
   background-color: rgb(174, 174, 174);
 }
 
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.icon {
+  color: #ffffff;
+  margin-left: 0.6rem;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 1450px) {
@@ -248,6 +263,14 @@ button:focus {
   input,
   textarea {
     min-width: 13rem;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 1.3rem;
   }
 }
 
